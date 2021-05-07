@@ -14,7 +14,7 @@ export const environment = {
   remoteApiPrefix: 'api',
   worksRemote: 'works',
   articlesRemote: 'articles',
-  contactUsRemote: 'contact-us'
+  contactUsRemote: 'contactus'
 };
 
 /*
