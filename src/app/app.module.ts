@@ -11,15 +11,19 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FooterComponent } from './footer/footer.component';
 import { WhoMadeThisWebsiteComponent } from './who-made-this-website/who-made-this-website.component';
 import { ToolbarButtonComponent } from './toolbar-button/toolbar-button.component';
 import { ThanhGuongComponent } from './thanh-guong/thanh-guong.component';
 import { HomeComponent } from './home/home.component';
-import { Item1Component } from './item1/item1.component';
-import { Item2Component } from './item2/item2.component';
-import { Item3Component } from './item3/item3.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { WorksComponent } from './works/works.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -30,9 +34,9 @@ import { Item3Component } from './item3/item3.component';
     WhoMadeThisWebsiteComponent,
     ThanhGuongComponent,
     HomeComponent,
-    Item1Component,
-    Item2Component,
-    Item3Component
+    ArticlesComponent,
+    WorksComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +49,11 @@ import { Item3Component } from './item3/item3.component';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    MatInputModule,
+    MatSnackBarModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

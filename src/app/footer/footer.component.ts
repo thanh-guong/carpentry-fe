@@ -7,9 +7,9 @@ import {environment} from "../../environments/environment";
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  item1Route = environment.item1Route;
-  item2Route = environment.item2Route;
-  item3Route = environment.item3Route;
+  articles = environment.articlesRoute;
+  works = environment.worksRoute;
+  contactUs = environment.contactUsRoute;
   whoMadeThisWebsiteRoute = environment.whoMadeThisWebsiteRoute;
 
 }

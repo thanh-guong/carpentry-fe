@@ -1,0 +1,18 @@
+.custom-container
+{
+  margin: auto;
+  padding: 16px;
+  max-width: 1080px;
+}
+
+.custom-form
+{
+
+}
+
+.form-field
+{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 100%;
+}

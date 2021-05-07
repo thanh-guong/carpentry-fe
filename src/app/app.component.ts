@@ -9,24 +9,24 @@ import {environment} from "../environments/environment";
 export class AppComponent {
   title = 'carpentry';
 
-  public item1 =
+  public articles =
     {
-      name: 'item1',
-      icon: 'build',
-      route: environment.item1Route,
+      name: 'News',
+      icon: 'article',
+      route: environment.articlesRoute,
     };
 
-  public item2 =
+  public works =
     {
-      name: 'item2',
+      name: 'Lavori',
       icon: 'build',
-      route: environment.item2Route,
+      route: environment.worksRoute,
     };
 
-  public item3 =
+  public contactUs =
     {
-      name: 'item3',
-      icon: 'build',
-      route: environment.item3Route,
+      name: 'Contattami',
+      icon: 'email',
+      route: environment.contactUsRoute,
     };
 }

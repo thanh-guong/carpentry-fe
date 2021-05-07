@@ -6,9 +6,15 @@ export const environment = {
   production: false,
   whoMadeThisWebsiteRoute: 'who-made-this-website',
   thanhGuongRoute: 'thanh-guong',
-  item1Route: 'item1Route',
-  item2Route: 'item2Route',
-  item3Route: 'item3Route',
+  worksRoute: 'works',
+  articlesRoute: 'articles',
+  contactUsRoute: 'contact-us',
+  remoteHost: 'localhost',
+  remotePort: '8000',
+  remoteApiPrefix: 'api',
+  worksRemote: 'works',
+  articlesRemote: 'articles',
+  contactUsRemote: 'contact-us'
 };
 
 /*

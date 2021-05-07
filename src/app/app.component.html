@@ -10,9 +10,9 @@
       <span class=""></span>
       <div fxShow="true" fxHide.lt-md="true">
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-        <app-toolbar-button [item]=item1></app-toolbar-button>
-        <app-toolbar-button [item]=item2></app-toolbar-button>
-        <app-toolbar-button [item]=item3></app-toolbar-button>
+        <app-toolbar-button [item]=articles></app-toolbar-button>
+        <app-toolbar-button [item]=works></app-toolbar-button>
+        <app-toolbar-button [item]=contactUs></app-toolbar-button>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -20,17 +20,17 @@
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav mode="push" #sidenav>
       <mat-nav-list>
-        <a (click)="sidenav.toggle()" routerLink={{item1.route}} mat-list-item>
-          <mat-icon>{{item1.icon}}</mat-icon>
-          {{item1.name}}
+        <a (click)="sidenav.toggle()" routerLink={{articles.route}} mat-list-item>
+          <mat-icon>{{articles.icon}}</mat-icon>
+          {{articles.name}}
         </a>
-        <a (click)="sidenav.toggle()" routerLink={{item2.route}} mat-list-item>
-          <mat-icon>{{item2.icon}}</mat-icon>
-          {{item2.name}}
+        <a (click)="sidenav.toggle()" routerLink={{works.route}} mat-list-item>
+          <mat-icon>{{works.icon}}</mat-icon>
+          {{works.name}}
         </a>
-        <a (click)="sidenav.toggle()" routerLink={{item3.route}} mat-list-item>
-          <mat-icon>{{item3.icon}}</mat-icon>
-          {{item3.name}}
+        <a (click)="sidenav.toggle()" routerLink={{contactUs.route}} mat-list-item>
+          <mat-icon>{{contactUs.icon}}</mat-icon>
+          {{contactUs.name}}
         </a>
         <a (click)="sidenav.toggle()" mat-list-item>
           <mat-icon>close</mat-icon>
