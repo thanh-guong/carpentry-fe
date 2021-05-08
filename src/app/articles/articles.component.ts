@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ArticleService, IArticle} from "../services/articles/article.service";
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-articles',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticlesComponent implements OnInit {
 
-  constructor() { }
+  articles: IArticle[] | undefined;
+  loading: boolean = false;
 
-  ngOnInit(): void {
+  constructor(private articleService: ArticleService) { }
+
+  ngOnInit(): void
+  {
+    this.loading = true;
+
+    this.articleService.getAllArticles().subscribe(
+      data => {
+        this.articles = data;
+        this.loading = false;
+      },
+      error => {
+        if (!environment.production)
+        {
+          console.log(error);
+        }
+
+        this.loading = false;
+      });
   }
 
 }

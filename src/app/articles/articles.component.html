@@ -1,1 +1,18 @@
-<p>articles works!</p>
+<h1 class="page-title">News</h1>
+
+<p class="page-description">TODO.</p>
+
+<div
+  fxLayout="row wrap"
+  fxLayout.lt-sm="column"
+  fxLayoutAlign="space-evenly"
+  class="custom-container"
+>
+  <ng-container *ngFor="let a of articles">
+    <app-article-card [name]="a.title" [image]="a.image" [id]="a.id"
+                             fxFlex="1 1 calc(50%"
+                             fxFlex.lt-md="1 1 calc(50%)"
+                             fxFlex.lt-sm="100%">
+    </app-article-card>
+  </ng-container>
+</div>

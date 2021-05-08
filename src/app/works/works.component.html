@@ -1,1 +1,18 @@
-<p>works works!</p>
+<h1 class="page-title">Lavori</h1>
+
+<p class="page-description">TODO.</p>
+
+<div
+  fxLayout="row wrap"
+  fxLayout.lt-sm="column"
+  fxLayoutAlign="space-evenly"
+  class="custom-container"
+>
+  <ng-container *ngFor="let w of works">
+    <app-article-card [name]="w.title" [image]="w.image" [id]="w.id"
+                      fxFlex="1 1 calc(50%"
+                      fxFlex.lt-md="1 1 calc(50%)"
+                      fxFlex.lt-sm="100%">
+    </app-article-card>
+  </ng-container>
+</div>

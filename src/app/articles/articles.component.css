@@ -1,0 +1,11 @@
+.custom-container
+{
+  margin: auto;
+  padding: 16px;
+  max-width: 1080px;
+}
+
+.breadcrumbs-container
+{
+  padding-left: 16px;
+}

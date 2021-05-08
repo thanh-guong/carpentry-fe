@@ -24,6 +24,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ArticleCardComponent } from './articles/article-card/article-card.component';
+import { WorkCardComponent } from './works/work-card/work-card.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HomeComponent,
     ArticlesComponent,
     WorksComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ArticleCardComponent,
+    WorkCardComponent
   ],
   imports: [
     BrowserModule,
