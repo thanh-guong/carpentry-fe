@@ -17,6 +17,9 @@ export class ArticleCardComponent implements OnInit {
   @Input()
   public id: number | undefined;
 
+  @Input()
+  public description: string | undefined;
+
   public imageLoaded: boolean | undefined;
 
   constructor() { }
