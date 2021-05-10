@@ -5,11 +5,12 @@
   <img [hidden]="!imageLoaded" mat-card-image [src]="image" alt="mat-card-image" (load)="onImageLoad();">
 
   <mat-card-content>
+    {{ (description && description.length > descLimit)? (description | slice:0:descLimit) + ' ...':(description) }}
   </mat-card-content>
 
   <mat-card-actions>
     <a [routerLink]="getWorkPath()">
-      <button mat-button><mat-icon>visibility</mat-icon> View more</button>
+      <button mat-button><mat-icon>visibility</mat-icon> Scopri di più</button>
     </a>
   </mat-card-actions>
 </mat-card>

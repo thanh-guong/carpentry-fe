@@ -17,6 +17,11 @@ export class WorkCardComponent implements OnInit {
   @Input()
   public id: number | undefined;
 
+  @Input()
+  public description: string | undefined;
+
+  descLimit: number = 100;
+
   public imageLoaded: boolean | undefined;
 
   constructor() { }

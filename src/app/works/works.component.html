@@ -9,10 +9,10 @@
   class="custom-container"
 >
   <ng-container *ngFor="let w of works">
-    <app-article-card [name]="w.title" [image]="w.image" [id]="w.id"
+    <app-work-card [name]="w.title" [image]="w.image" [id]="w.id" [description]="w.description"
                       fxFlex="1 1 calc(50%"
                       fxFlex.lt-md="1 1 calc(50%)"
                       fxFlex.lt-sm="100%">
-    </app-article-card>
+    </app-work-card>
   </ng-container>
 </div>
