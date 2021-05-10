@@ -2,3 +2,29 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a:hover
+{
+  color: unset;
+}
+
+a
+{
+  color: unset;
+  text-decoration: none;
+}
+
+.card
+{
+  margin: 16px !important;
+}
+
+.page-title
+{
+  margin: 16px !important;;
+}
+
+.page-description
+{
+  margin: 16px !important;;
+}
