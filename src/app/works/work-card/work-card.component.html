@@ -8,7 +8,7 @@
     {{ (description && description.length > descLimit)? (description | slice:0:descLimit) + ' ...':(description) }}
   </mat-card-content>
 
-  <mat-card-actions>
+  <mat-card-actions *ngIf="!hideButton">
     <a [routerLink]="getWorkPath()">
       <button mat-button><mat-icon>visibility</mat-icon> Scopri di più</button>
     </a>

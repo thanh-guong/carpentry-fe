@@ -20,6 +20,9 @@ export class WorkCardComponent implements OnInit {
   @Input()
   public description: string | undefined;
 
+  @Input()
+  public hideButton: boolean | undefined = false;
+
   descLimit: number = 100;
 
   public imageLoaded: boolean | undefined;
@@ -30,7 +33,7 @@ export class WorkCardComponent implements OnInit {
 
   getWorkPath(): string
   {
-    return '/' + environment.articlesRoute + '/' + this.id;
+    return '/' + environment.worksRoute + '/' + this.id;
   }
 
   onImageLoad(): void

@@ -26,6 +26,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ArticleCardComponent } from './articles/article-card/article-card.component';
 import { WorkCardComponent } from './works/work-card/work-card.component';
+import { WorkDetailComponent } from './works/work-detail/work-detail.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { WorkCardComponent } from './works/work-card/work-card.component';
     WorksComponent,
     ContactUsComponent,
     ArticleCardComponent,
-    WorkCardComponent
+    WorkCardComponent,
+    WorkDetailComponent
   ],
   imports: [
     BrowserModule,

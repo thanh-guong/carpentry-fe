@@ -1,0 +1,35 @@
+<div class="custom-container">
+  <h1 class="page-title">{{work?.title}}</h1>
+
+  <div
+    fxLayout="row wrap"
+    fxLayout.lt-sm="column"
+    fxLayoutAlign="space-evenly">
+    <mat-card class="card" fxFlex="0 1 calc(100%" fxFlex.lt-md="0 1 calc(100%)" fxFlex.lt-sm="100%">
+      <mat-card-title>Story</mat-card-title>
+      <mat-card-content>
+        {{work?.description}}
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card this-card" fxFlex="0 1 calc(100%" fxFlex.lt-md="0 1 calc(100%)" fxFlex.lt-sm="100%">
+      <mat-card-title>Classic version</mat-card-title>
+      <img mat-card-image [src]="work?.front_image" alt="mat-card-image">
+    </mat-card>
+  </div>
+
+  <h1 class="page-title">Foto</h1>
+  <div
+    fxLayout="row wrap"
+    fxLayout.lt-sm="column"
+    fxLayoutAlign="space-evenly">
+    <ng-container>
+      <app-work-card
+        *ngFor="let image of work?.images"
+        [image]="image.image"
+        [hideButton]="true"
+        fxFlex="0 1 calc(50%" fxFlex.lt-md="0 1 calc(50%)" fxFlex.lt-sm="100%">
+      </app-work-card>
+    </ng-container>
+  </div>
+</div>
