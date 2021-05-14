@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {environment} from "../../../environments/environment";
+import {formatDate} from "@angular/common";
 
 @Component({
   selector: 'app-article-card',
@@ -20,11 +21,17 @@ export class ArticleCardComponent implements OnInit {
   @Input()
   public description: string | undefined;
 
+  @Input()
+  public last_update: Date | undefined;
+
   public imageLoaded: boolean | undefined;
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void
+  {
+
+  }
 
   getArticlePath(): string
   {

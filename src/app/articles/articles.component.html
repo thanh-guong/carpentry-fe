@@ -1,7 +1,5 @@
 <h1 class="page-title">News</h1>
 
-<p class="page-description">TODO.</p>
-
 <div
   fxLayout="row wrap"
   fxLayout.lt-sm="column"
@@ -9,7 +7,7 @@
   class="custom-container"
 >
   <ng-container *ngFor="let a of articles">
-    <app-article-card [name]="a.title" [image]="a.image" [id]="a.id" [description]="a.description"
+    <app-article-card [name]="a.title" [image]="a.image" [id]="a.id" [description]="a.description" [last_update]="a.last_update"
                              fxFlex="1 1 calc(100%)"
                              fxFlex.lt-md="1 1 calc(100%)"
                              fxFlex.lt-sm="100%">

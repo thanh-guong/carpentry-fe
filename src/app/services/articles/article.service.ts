@@ -9,6 +9,7 @@ export interface IArticle
   title: string;
   description: string;
   image: string;
+  last_update: Date
 }
 
 @Injectable({
