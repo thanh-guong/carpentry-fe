@@ -54,23 +54,20 @@ export class ContactUsComponent
     this.contactUsService.postEmail('contact-us', this.message.value, this.email.value).subscribe(
       data => {
         this.loading = false;
-        this.openErrorSnackBar('Email sent', '');
+        this.openErrorSnackBar('Email inviata', '');
       },
       (error: HttpErrorResponse) => {
-        if (!environment.production)
-        {
           this.loading = false;
           this.error = true;
-
           if (error.status === +429)
           {
             // {"detail": "Request was throttled. Expected available in 57 seconds."}
-            const m = 'Available in ' + error.error.detail.substring(45, error.message.length - 3);
+            const m = 'Disponibile in ' + error.error.detail.substring(45, error.message.length - 11) + ' secondi';
             this.openErrorSnackBar(m, '');
             return;
           }
-          this.openErrorSnackBar('Error', '');
-        }
+
+          this.openErrorSnackBar('Errore', '');
       }
     );
   }
